@@ -22,21 +22,19 @@
       <section>
       <h3>инфраструктура:</h3>
       <ul>
-        <li>бассейн</li>
-        <li>парковка</li>
-        <li>wi-fi</li>
+        <input type="checkbox" name="pool" checked><li>бассейн</li>
+        <input type="checkbox" name="parcing"><li>парковка</li>
+        <input type="checkbox" name="wi-fi"><li>wi-fi</li>
       </ul>
       <h3>тип жилья:</h3>
       <ul>
-        <li>гостиница</li>
-        <li>мотель</li>
-        <li>апартаменты</li>
+        <input type="checkbox" name="hotel" checked><li>гостиница</li>
+        <input type="checkbox" name="motel" checked><li>мотель</li>
+        <input type="checkbox" name="apartaments" checked><li>апартаменты</li>
       </ul>
       <h3>стоимость в сутки (Р):</h3>
-      <p>от</p>
-      <p>до</p>
-      <!--пока неизвестные мне элементы-->
-      <button type="button">показать</button>
+        <p>от 0<input type="range" min="0" max="3000">до 3000</p>
+      <input type="submit" value="показать">
     </section>
     <h2>найдено:</h2>
       <h4>сортировка:</h4>
