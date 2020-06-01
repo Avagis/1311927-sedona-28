@@ -7,7 +7,7 @@
   <body>
   	<header>
   		<nav>
-          <img src="img/logo.png" height="70" width="138" alt="Логотип седоны">
+          <a title="Городок Седона"><img src="img/logo.png" height="70" width="138" alt="Логотип седоны"></a>
   			<ul>
   			<li><a href="">информация</a></li>
   			<li><a href="">фото и видео</a></li>
@@ -17,42 +17,49 @@
   		</nav>
   	</header>
   	<main>
+        <div>
           <img src="img/background_photo.png" height="509" wight="1200" alt="фон">
           <img src="img/welcome.png" height="350.88px" width="456.65px" alt="приветствие">
           <img src="img/shape.png" height="57" width="1200" alt="маска">
-    <h3 class="visually-hidden">Описание</h3>
+        </div>
+    <div class="visually-hidden">Описание</div>
+    <div>
   		<h1>Седона — небольшой городок в Аризоне, заслуживающий большего</h1>
   		<p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
         <section>
-    <h3 class="visually-hidden">Приемущества</h3>
+    <div class="visually-hidden">Приемущества</div>
+      <div>
         <div>
         <h3>Настоящий городок</h3>
           <p>-№1-</p>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
           <img src="img/citysedona.png" height="256"width="800" alt="фото городка">
+      </div>
           <ul>
             <li>
-        <h3>Жилье</h3>
-          <img src="img/icons/house.svg" width="75"hight="72" alt="жилье">
+        <p>Жилье</p>
+          <img src="img/icons/house.svg" width="75"hight="72" alt="Жилье">
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
           <li>
-        <h3>Еда</h3>
-            <img src="img/icons/food.svg" wight="75" hight="70" alt="еда">
+        <p>Еда</p>
+            <img src="img/icons/food.svg" wight="75" hight="70" alt="Еда">
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li>
-        <h3>Сувениры</h3>
-            <img src="img/icons/souvenirs.svg" wight="64" hight="77" alt="сувениры">
+        <p>Сувениры</p>
+            <img src="img/icons/souvenirs.svg" wight="64" hight="77" alt="Сувениры">
             <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
-        <img src="img/devil_bridge.png" wight="800" hight="256" alt="мост дьявола">
+    <div><img src="img/devil_bridge.png" wight="800" hight="256" alt="мост дьявола">
       <div>
         <h2>Там есть Мост дьявола</h2>
         <p>-№2-</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
+    </div>
         <ul>
           <li>
             <h3>Небольшая площадь</h3>
@@ -71,38 +78,46 @@
           </li>
         </ul>
       </section>
-  		<section>
-  		</section>
-  		<h2>Заинтересовались?</h2>
+  	<h2>Заинтересовались?</h2>
   		<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <img src="img/map.png" wight="1199" hight="594" alt="карта">
+    <div>
+        <img src="img/map.png" wight="1199" hight="594" alt="карта">
       <!--Скорее всего тут будет  гугл карта, но пока что заглушка с картинкой-->
-  		<div><section>
+  		<div>
+        <section>
   			<h2>Поиск гостиницы в седоне</h2>
-  			<ul>
-  				<li>Дата заезда:</li>
-  				  <input type="date" name="calendar"><img src="img/icons/calendar.svg" width="21" height="23">
-  				<li>Дата выезда:</li>
-            <input type="date" name="calendar"><img src="img/icons/calendar.svg" width="21" height="23">
-          <li>Взрослые</li>
-            <input type="number">
-  				<li>Дети</li>
-  				  <input type="number">
-            <br>
+  			<div>
+        <ul>
+  				<li>
+            <label for="arrival date">Дата заезда:</label><input type="date" name="calendar" id="arrival date">
+            <img src="img/icons/calendar.svg" width="21" height="23">
+          </li>
+  				<li>
+            <label for="date of departure">Дата выезда:</label><input type="date" name="calendar" id="date of departure">
+            <img src="img/icons/calendar.svg" width="21" height="23">
+          </li>
+          <li>
+            <label for="adult">Взрослые</label><input type="number" id="ault">
+          </li>
+  				<li>
+            <label for="children">Дети</label><input type="number" id="children">
+          </li>
   				<input type="submit" value="найти">
-  				</ul>
+  			</ul>
+        </div>
   		</section>
       </div>
+    </div>
   	</main>
   	<footer>
-      <h3 class="visually-hidden">Связаться с нами</h3>
+      <div class="visually-hidden">Связаться с нами</div>
   		<section>
   			<ul>
   				<li>#VISITSEDONA</li>
   				<li>Тел: +7 (495) 666-02-66</li>
   			</ul>
   		</section>
-    <h3 class="visually-hidden">Соцсети</h3>
+    <div class="visually-hidden">Соцсети</div>
   		<section>
   			<ul>
   				<li><a href="img/twitter.png" >Твиттер</a></li>
@@ -110,7 +125,7 @@
   				<li><a href="img/youtube.png">Ютуб</a></li>
   			</ul>
   		</section>
-    <h3 class="visually-hidden">Разработано в HTML академии</h3>
+    <div class="visually-hidden">Разработано в HTML академии</div>
   		<p>
     WEBSITE BY
     <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" height="41" width="115" alt="Логотип HTMLакадемии"></a>
