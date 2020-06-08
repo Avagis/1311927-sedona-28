@@ -14,16 +14,13 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans" sans-serif;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 26px;
+  font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url("img/background_photo.png");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
@@ -35,17 +32,51 @@ img {
   height: auto;
 }
 
-.main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-}
-
-/*.main-navigation-list {
-  background-color: var(--basic-white);
-}
-*/
 .site-navigation {
   list-style: none;
+}
+
+.greeting {
+  list-style: none;
+  text-align: center;
+}
+
+h1 {
+  font-size: 21; 
+  line-height: 26;
+}
+
+.question {
+  list-style: none;
+  text-align: center;
+}
+
+.search-form ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.search-hotels {
+  display: none;
+  background-color: var(--basic-brown);
+  list-style: none;
+  text-align: center;
+}
+
+.botton {
+  background-color: var(--basic-blue)
+}
+
+.main-footer ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.social span {
+  list-style: none;
+  text-decoration: none;
 }

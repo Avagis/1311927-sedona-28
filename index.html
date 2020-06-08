@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
-  	<header class="main-header">
+  <body>
+  	<header>
   		<nav>
-          <a  class="main-header-logo" title="Городок Седона"><img src="img/logo.png" height="70" width="138" alt="Логотип седоны"></a>
-          <div cclass="main-navigation">
-  			<ul class="main-navigation-list">
+          <a title="Городок Седона"><img src="img/logo.png" height="70" width="138" alt="Логотип седоны"></a>
+          <div>
+  			<ul class="site-navigation">
   			<li><a href="">информация</a></li>
   			<li><a href="">фото и видео</a></li>
   			<li><a href="">карта штата</a></li>
@@ -22,19 +22,19 @@
   		</nav>
   	</header>
   	<main>
-        <div>
+        <div class="greeting">
           <img src="img/background_photo.png" height="509" wight="1200" alt="фон">
           <img src="img/welcome.png" height="350.88px" width="456.65px" alt="приветствие">
           <img src="img/shape.png" height="57" width="1200" alt="маска">
         </div>
     <div class="visually-hidden">Описание</div>
-    <div>
-  		<h1>Седона — небольшой городок в Аризоне, заслуживающий большего</h1>
-  		<p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </div>
+      <div class="description">
+  		  <h1>Седона — небольшой городок в Аризоне, заслуживающий большего</h1>
+  		  <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
         <section>
     <div class="visually-hidden">Приемущества</div>
-      <div>
+      <div class="advantages">
         <div>
         <h3>Настоящий городок</h3>
           <p>-№1-</p>
@@ -42,12 +42,13 @@
         </div>
           <img src="img/citysedona.png" height="256"width="800" alt="фото городка">
       </div>
-          <ul>
-            <li>
-        <p>Жилье</p>
-          <img src="img/icons/house.svg" width="75"hight="72" alt="Жилье">
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
-          <li>
+            <ul>
+              <li>
+                <p>Жилье</p>
+                <img src="img/icons/house.svg" width="75"hight="72" alt="Жилье">
+                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li>
         <p>Еда</p>
             <img src="img/icons/food.svg" wight="75" hight="70" alt="Еда">
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
@@ -83,18 +84,22 @@
           </li>
         </ul>
       </section>
+    <div class="question">
   	<h2>Заинтересовались?</h2>
-  		<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+  		<p>Укажите предпологаемые даты поездки,</p>
+      <p>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    </div>
     <div>
         <img src="img/map.png" wight="1199" hight="594" alt="карта">
       <!--Скорее всего тут будет  гугл карта, но пока что заглушка с картинкой-->
   		<div>
-        <section>
-  			<h2>Поиск гостиницы в седоне</h2>
+        <section class="search-form">
+  			<h2 class="search-hotels">Поиск гостиницы в седоне</h2>
   			<div>
         <ul>
   				<li>
-            <label for="arrival date">Дата заезда:</label><input type="date" name="calendar" id="arrival date">
+            <label for="arrival date">Дата заезда:</label>
+            <input class="arrival date" type="date" name="calendar" id="arrival date">
             <img src="img/icons/calendar.svg" width="21" height="23">
           </li>
   				<li>
@@ -107,14 +112,14 @@
   				<li>
             <label for="children">Дети</label><input type="number" id="children">
           </li>
-  				<input type="submit" value="найти">
+  				<input class="botton" type="submit" value="найти">
   			</ul>
         </div>
   		</section>
       </div>
     </div>
   	</main>
-  	<footer>
+  	<footer class="main-footer">
       <div class="visually-hidden">Связаться с нами</div>
   		<section>
   			<ul>
@@ -123,11 +128,24 @@
   			</ul>
   		</section>
     <div class="visually-hidden">Соцсети</div>
-  		<section>
+  		<section class="social">
   			<ul>
-  				<li><a href="img/twitter.png" >Твиттер</a></li>
-  				<li><a href="img/fb-icon.png">Фейсбук</a></li>
-  				<li><a href="img/youtube.png">Ютуб</a></li>
+  				  <li>
+              <a href="https://twitter.com"><img src="img/icons/twitter.svg">
+              <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+  				  <li>
+              <a href="https://ru-ru.facebook.com"><img src="img/icons/fb-icon.svg">
+              <span class="visually-hidden">Фейсбук</span>
+              </a>
+          </li>
+  				<li>
+            <a href="https://www.youtube.com">
+              <img src="img/icons/youtube.svg">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
   			</ul>
   		</section>
     <div class="visually-hidden">Разработано в HTML академии</div>
