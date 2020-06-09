@@ -1,11 +1,13 @@
-/* Variables */
-
 :root {
 --basic-white: #FFFFFF;
 --basic-black: #000000;
 --logo-blue: #81B3D3;
 --basic-blue: #81B3D2;
+--midle-blue: #669EC0;
+--dark-blue: #5496BD;
 --basic-brown: #766357;
+--midle-brown: #604E43;
+--dark-broun: #503E33;
 --basic-gray: #F2F2F2;
  --background-gray: #EEEEEE;
 }
@@ -32,10 +34,19 @@ img {
   height: auto;
 }
 
-.site-navigation {
+.site-navigation, a {
   list-style: none;
+  color: var(--basic-black);
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:vicited {
+  color: var(--basic-brown);
+}
 .greeting {
   list-style: none;
   text-align: center;
@@ -72,11 +83,16 @@ h1 {
 }
 
 .main-footer ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.social {
   list-style: none;
   text-decoration: none;
+  background-color: transparent;
+}
+
+.social a {
+  list-style: none;
+  text-decoration: none;
+}
+.social a:focus,
+.social a:hover, {
+  color: var(--basic-blue);
 }
