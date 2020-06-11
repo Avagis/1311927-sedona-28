@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -54,65 +54,89 @@
         <div><p class="visually-hidden">По возрастанию</p></div>
         <div><p class="visually-hidden">По убыванию</p></div>
       <h3 class="visually-hidden">Результаты поиска</h3>
-      <article>
+      <article class="hotel-list">
           <a><img src="img/amara_resort.png" height="90" width="137" alt="фото гостиницы"></a>
-          <a href="">AMARA RESORT & SPA</a>
-            <span>
-              <p>ГОСТИНИЦА</p>
-              <p>ОТ 4000 Р.</p>
+          <a href=""><span class="hotel-name">Amara Resot & SPA</span></a>
+            <span class="hotel-price">
+              <p>Гостиница</p>
+              <p>От 4000 Р.</p>
             </span>
-          <a href="">ПОДРОБНЕЕ</a>
-          <a href="">ЗАБРОНИРОВАТЬ</a>
-          <span>****</span>
-          <span>Рейтинг 8,5</span>
+          <a href="" class="detail">Подробнее</a>
+          <a href="" class="reservation">Забронировать</a>
+          <span class="star">
+              <img src="img/icons/star.svg">
+              <img src="img/icons/star.svg">
+              <img src="img/icons/star.svg">
+              <img src="img/icons/star.svg">****</span>
+          <span class="rating">Рейтинг 8,5</span>
       </article>
-      <br>
-        <article>
+        <article class="hotel-list">
          <a> <img src="img/desert_quil_inn.png" height="90" width="137" alt="фото мотеля"></a>
-          <a href="">DESERT QUAIL INN</a>
+          <a href=""><span class="hotel-name">Desert Quil Inn</span></a>
            <span>
-            <p>МОТЕЛЬ</p>
-            <p>ОТ 3000 Р.</p>
+            <p>Мотель</p>
+            <p>От 3000 Р.</p>
           </span>
-          <a href="">ПОДРОБНЕЕ</a>
-          <a href="">ЗАБРОНИРОВАТЬ</a>
-          <span>***</span>
-          <span>Рейтинг 8,9</span>
+          <a href="" class="detail">Подробнее</a>
+          <a href="" class="reservation">Забронировать</a>
+          <span class="star">
+            <img src="img/icons/star.svg">
+            <img src="img/icons/star.svg">
+            <img src="img/icons/star.svg">***</span>
+          <span class="rating">Рейтинг 8,9</span>
         </article>
-        <article>
+        <article class="hotel-list">
            <a> <img src="img/villas_at_poco_diablo.png" height="90" width="137" alt="фото апартаментов"></a>
-          <a href="">VILLAS AT POCO DIABLO</a>
+          <a href=""><span class="hotel-name">Villas at poco diablo</span></a>
            <span>
-            <p>АПАРТАМЕНТЫ</p>
-            <p>ОТ 2000 Р.</p>
+            <p>Апартаменты</p>
+            <p>От 2000 Р.</p>
           </span>
-          <a href="">ПОДРОБНЕЕ</a>
-          <a href="">ЗАБРОНИРОВАТЬ</a>
-          <span>**</span>
-          <span>Рейтинг 9,2</span>
+          <a href="" class="detail">Подробнее</a>
+          <a href="" class="reservation">Забронировать</a>
+          <span class="star">
+            <img src="img/icons/star.svg">
+            <img src="img/icons/star.svg">**</span>
+          <div><span class="rating">Рейтинг 9,2</span></div>
         </article>
     </main>
-        <footer>
-      <div class="visually-hidden">Связаться с нами</div>
+    <footer>
+      <div class="main-footer">
+      <span class="visually-hidden">Связаться с нами</span>
       <section>
         <ul>
           <li>#VISITSEDONA</li>
           <li>Тел: +7 (495) 666-02-66</li>
         </ul>
       </section>
-    <div class="visually-hidden">Соцсети</div>
+    <span class="visually-hidden">Соцсети</span>
       <section>
-        <ul>
-          <li><a href="img/twitter.png" >Твиттер</a></li>
-          <li><a href="img/fb-icon.png">Фейсбук</a></li>
-          <li><a href="img/youtube.png">Ютуб</a></li>
+        <ul class="social">
+            <li>
+              <a href="https://twitter.com">
+              <img src="img/icons/twitter.svg">
+              <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://ru-ru.facebook.com"><img src="img/icons/fb-icon.svg">
+              <span class="visually-hidden">Фейсбук</span>
+              </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com">
+              <img src="img/icons/youtube.svg">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
         </ul>
       </section>
     <div class="visually-hidden">Разработано в HTML академии</div>
       <p>
     WEBSITE BY
-    <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" height="41" width="115" alt="Логотип HTMLакадемии"></a>
+    <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" height="41" width="115" alt="Логотип HTMLакадемии"></a>
   </p>
+  </div>
     </footer>
   </body>
 </html>
