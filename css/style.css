@@ -125,16 +125,11 @@ img {
 }
 
 .button {
-  font: inherit;
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
-  border: 1px solid var(--basic-blue);
+  background: url(../icons/square.svg)  no-repeat;
 }
 
 .social {
-  border-width: 46px;
-  list-style: none;
-  text-decoration: none;
+
 }
 
 .visually-hidden {
