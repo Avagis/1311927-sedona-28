@@ -116,7 +116,6 @@ img {
 
 .main-footer ul {
   list-style: none;
-  text-decoration: none;
   background-color: transparent;
 }
 
@@ -124,10 +123,26 @@ img {
   font-weight: bold;
 }
 
-.button {
-  background: url(../icons/square.svg)  no-repeat;
+.twit-button {
+  background-image: url("../img/icons/twitter.svg") no-repeat;
+  background-color: var(--basic-blue);
+  width: 46px;
+  min-height: 48px;
 }
 
+.fb-button {
+  background-image: url("../img/icons/fb-icon.svg") no-repeat;
+  background-color: var(--basic-blue);
+  width: 46px;
+  min-height: 48px;
+}
+
+.yt-button {
+  background-image: url("../img/icons/fb-icon.svg") no-repeat;
+  background-color: var(--basic-blue);
+  width: 46px;
+  min-height: 48px;
+}
 .social {
 
 }
@@ -138,7 +153,7 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
+} 
 
 /*catalog*/
 
