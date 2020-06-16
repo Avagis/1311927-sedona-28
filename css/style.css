@@ -124,27 +124,35 @@ img {
 }
 
 .twit-button {
-  background-image: url("../img/icons/twitter.svg") no-repeat;
+  background: url("../img/icons/twitter.svg") center no-repeat; 
+  display: block;
   background-color: var(--basic-blue);
   width: 46px;
   min-height: 48px;
 }
 
 .fb-button {
-  background-image: url("../img/icons/fb-icon.svg") no-repeat;
+  background: url("../img/icons/fb-icon.svg") center no-repeat;
   background-color: var(--basic-blue);
+  display: block;
   width: 46px;
   min-height: 48px;
 }
 
 .yt-button {
-  background-image: url("../img/icons/fb-icon.svg") no-repeat;
+  text-align: center;
+  background: url("../img/icons/youtube.svg") center no-repeat;
+  display: block;
   background-color: var(--basic-blue);
   width: 46px;
   min-height: 48px;
 }
-.social {
 
+.academy {
+  background: url("../img/icons/logo-htmlacademy.svg"); 
+  display: block;
+  width: 115px;
+  height: 41px;
 }
 
 .visually-hidden {
