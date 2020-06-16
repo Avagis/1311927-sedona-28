@@ -123,10 +123,23 @@ img {
   font-weight: bold;
 }
 
+.social a:hover,
+.social a:focus {
+  background-color: var(--midle-blue);
+}
+
 .twit-button {
   background: url("../img/icons/twitter.svg") center no-repeat; 
   display: block;
   background-color: var(--basic-blue);
+  width: 46px;
+  min-height: 48px;
+}
+
+.social a:active {
+  background: url("../img/icons/square.svg") center no-repeat; 
+  display: block;
+  background-color: var(--dark-blue);
   width: 46px;
   min-height: 48px;
 }
@@ -155,15 +168,26 @@ img {
   height: 41px;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-} 
+.academy:hover {
+  background: url("../img/icons/logo-htmlacademy-focus.svg"); 
+  display: block;
+  width: 115px;
+  height: 41px;
+}
+
+
+.academy:active {
+  background: url("../img/icons/logo-htmlacademy-active.svg"); 
+  display: block;
+  width: 115px;
+  height: 41px;
+
+}
+
 
 /*catalog*/
+
+
 
 .hotel-list {
   border-bottom: 1px solid var(--border-gray);
@@ -216,3 +240,18 @@ img {
   text-align: center;
   color: var(--special-gray);
 }
+
+
+
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+} 
