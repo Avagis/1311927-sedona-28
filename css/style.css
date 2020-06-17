@@ -234,7 +234,30 @@ img {
 
 /*catalog*/
 
+.background-2 {
 
+}
+
+.options ul{
+  list-style: none;
+  line-height: 21px;
+}
+
+.found {
+  font-size: 21px;
+}
+
+.sortting {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort {
+  list-style: none;
+  color: var(--basic-blue);
+  
+}
 
 .hotel-list {
   border-bottom: 1px solid var(--border-gray);
