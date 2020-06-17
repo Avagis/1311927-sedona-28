@@ -70,6 +70,45 @@ img {
   text-transform: uppercase;
 }
 
+.blue-box {
+  background: var(--basic-blue);
+  color: var(--basic-white);
+  font-weight: bold;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  display: block;
+  width: 400px;
+  height: 256px;
+}
+
+.white {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--basic-white);
+}
+
+.list {
+  list-style: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+
+}
+
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--special-dark);
+}
+
+
+.advantages {
+  list-style: none;
+  background-color: var(--background-gray);
+}
+
 .causes {
   text-align: center;
   text-transform: uppercase;
@@ -92,7 +131,11 @@ img {
   color: var(--special-gray);
 }
 
+.map {
+  text-align: center;
+}
 
+/*search hotel*/
 
 .search-form ul {
   display: none;
@@ -113,6 +156,7 @@ img {
 .botton {
   background-color: var(--basic-blue)
 }
+
 
 
 
