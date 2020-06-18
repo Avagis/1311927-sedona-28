@@ -70,45 +70,6 @@ img {
   text-transform: uppercase;
 }
 
-.blue-box {
-  background: var(--basic-blue);
-  color: var(--basic-white);
-  font-weight: bold;
-  text-align: center;
-  font-size: 21px;
-  line-height: 21px;
-  display: block;
-  width: 400px;
-  height: 256px;
-}
-
-.white {
-  font-weight: normal;
-  font-size: 14px;
-  color: var(--basic-white);
-}
-
-.list {
-  list-style: none;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-
-}
-
-.text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  color: var(--special-dark);
-}
-
-
-.advantages {
-  list-style: none;
-  background-color: var(--background-gray);
-}
-
 .causes {
   text-align: center;
   text-transform: uppercase;
@@ -131,11 +92,7 @@ img {
   color: var(--special-gray);
 }
 
-.map {
-  text-align: center;
-}
 
-/*search hotel*/
 
 .search-form ul {
   display: none;
@@ -157,18 +114,11 @@ img {
   background-color: var(--basic-blue)
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 
 
 /*Footer*/
 
 
-=======
->>>>>>> parent of 5fdde43... Базовая стилизация
-=======
->>>>>>> parent of 5fdde43... Базовая стилизация
 .main-footer ul {
   list-style: none;
   background-color: transparent;
@@ -183,19 +133,16 @@ img {
   background-color: var(--midle-blue);
 }
 
+
+.social a:active {
+  display: block;
+  background-color: var(--dark-blue);
+}
+
 .twit-button {
   background: url("../img/icons/twitter.svg") center no-repeat; 
   display: block;
   background-color: var(--basic-blue);
-  width: 46px;
-  min-height: 48px;
-}
-
-.social a:active {
-  background: url("../img/icons/twitter.svg") center no-repeat; 
-  display: block;
-  background-color: var(--dark-blue);
-  mix-blend-mode: normal;
   width: 46px;
   min-height: 48px;
 }
@@ -208,7 +155,7 @@ img {
   min-height: 48px;
 }
 
-.yt-button {
+.yt-button  {
   text-align: center;
   background: url("../img/icons/youtube.svg") center no-repeat;
   display: block;
@@ -318,10 +265,6 @@ img {
   width: 110px;
   height: 27px;
 }
-
-
-
-
 
 
 
