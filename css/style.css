@@ -70,6 +70,45 @@ img {
   text-transform: uppercase;
 }
 
+.blue-box {
+  background: var(--basic-blue);
+  color: var(--basic-white);
+  font-weight: bold;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  display: block;
+  width: 400px;
+  height: 256px;
+}
+
+.white {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--basic-white);
+}
+
+.list {
+  list-style: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+
+}
+
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--special-dark);
+}
+
+
+.advantages {
+  list-style: none;
+  background-color: var(--background-gray);
+}
+
 .causes {
   text-align: center;
   text-transform: uppercase;
@@ -193,8 +232,69 @@ img {
 /*catalog*/
 
 
+.options ul{
+  background-color: var(--basic-blue); /*Временное решение, для видимости элементов*/
+  list-style: none;
+  line-height: 21px;
+}
 
-.hotel-list {
+.c {
+  width: 27px;
+  height: 23px;
+  display: block;
+  position: relative;
+}
+
+input[type="checkbox"] + span {
+ position: absolute; /* Абсолютное позиционирование */
+ left: 0; top: 0;
+ width: 100%; height: 100%;
+ cursor: pointer; /* Курсор в виде руки */
+  background-image: url(../img/icons/checkbox-on.svg) no-repeat; 
+}
+
+.found {
+  font-size: 21px;
+}
+
+.sortting {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort {
+  list-style: none;
+}
+
+.sort a{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sort a:hover {
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.sort a:focus{
+  color: var(--basic-blue);
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sort a:active {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: none;
+}
+
+.hotel-list{
   border-bottom: 1px solid var(--border-gray);
 }
 
