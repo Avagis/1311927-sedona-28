@@ -236,21 +236,13 @@ img {
   background-color: var(--basic-blue); /*Временное решение, для видимости элементов*/
   list-style: none;
   line-height: 21px;
+  color: var(--basic-white);
 }
 
-.c {
-  width: 27px;
+.checkbox {
+  width: 23px;
   height: 23px;
-  display: block;
-  position: relative;
-}
-
-input[type="checkbox"] + span {
- position: absolute; /* Абсолютное позиционирование */
- left: 0; top: 0;
- width: 100%; height: 100%;
- cursor: pointer; /* Курсор в виде руки */
-  background-image: url(../img/icons/checkbox-on.svg) no-repeat; 
+  background-image: url("../img/icons/checkbox.svg") no-repeat;
 }
 
 .found {
@@ -292,6 +284,16 @@ input[type="checkbox"] + span {
   color: var(--basic-black);
   opacity: 1;
   border-bottom: none;
+}
+
+.up {
+  background-image: url(../img/icons/up.svg);
+}
+
+.down {
+  display: block;
+  background-image: url(../img/icons/up.svg) no-repeat;
+  transform: rotate(-180deg);
 }
 
 .hotel-list{

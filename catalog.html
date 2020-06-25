@@ -21,20 +21,37 @@
   	</header>
     <main>
       <img src="img/background2.png" weight="1200" height="217" alt="фон">
-    <h3 class="visually-hidden">Выбор гостиниц</h3>
+    <span class="visually-hidden">Выбор гостиниц</span>
       <div>
       <section class="options">
       <h3>инфраструктура:</h3>
       <ul>
-        <li><input class="checkbox" type="checkbox" name="pool" checked><label for="checkbox">бассейн</label></li>
-        <li><input type="checkbox" name="parcing"><label>парковка</label></li>
-        <li><input type="checkbox" name="wi-fi"><label>wi-fi</label></li>
+        <li>
+          <input class="visually-hidden checkbox" type="checkbox" name="pool" id="pool" checked>
+          <label for="pool">бассейн</label>
+        </li>
+        <li>
+          <input class="visually-hidden checkbox" type="checkbox" name="parcing">
+          <label>парковка</label></li>
+        <li>
+          <input class="visually-hidden checkbox" type="checkbox" name="wi-fi">
+          <label>wi-fi</label>
+        </li>
       </ul>
       <h3>тип жилья:</h3>
       <ul>
-        <li><input type="checkbox" name="hotel" checked><label>гостиница</label></li>
-        <li><input type="checkbox" name="motel" checked><label>мотель</label></li>
-        <li><input type="checkbox" name="apartaments" checked><label>апартаменты</label></li>
+        <li>
+          <input class="visually-hidden checkbox" type="checkbox" name="hotel" checked>
+          <label>гостиница</label>
+        </li>
+        <li>
+          <input class="visually-hidden checkbox" type="checkbox" name="motel" checked>
+          <label>мотель</label>
+        </li>
+        <li>
+          <input class="visually-hidden checkbox" type="checkbox" name="apartaments" checked>
+          <label>апартаменты</label>
+        </li>
       </ul>
       <h3>стоимость в сутки (Р):</h3>
         <div>от 0</div>
@@ -50,8 +67,8 @@
          <li><a href="">по типу</li>
          <li><a href="">по рейтингу</li>
         </ul>
-        <div><p class="visually-hidden">По возрастанию</p></div>
-        <div><p class="visually-hidden">По убыванию</p></div>
+        <div class="up"><span class="visually-hidden">По возрастанию</span></div>
+        <a href="" class="down"><span class="visually-hidden">По убыванию</span></a>
       <h3 class="visually-hidden">Результаты поиска</h3>
       <article class="hotel-list">
           <a><img src="img/amara_resort.png" height="90" width="137" alt="фото гостиницы"></a>
