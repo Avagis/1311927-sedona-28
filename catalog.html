@@ -21,45 +21,53 @@
   	</header>
     <main>
       <img src="img/background2.png" weight="1200" height="217" alt="фон">
+    <form class="fs" action="https://echo.htmlacademy.ru/" method="get">
     <span class="visually-hidden">Выбор гостиниц</span>
       <div>
       <section class="options">
-      <h3>инфраструктура:</h3>
-      <ul>
-        <li>
-          <input class="visually-hidden checkbox" type="checkbox" name="pool" id="pool" checked>
-          <label for="pool">бассейн</label>
-        </li>
-        <li>
-          <input class="visually-hidden checkbox" type="checkbox" name="parcing">
-          <label>парковка</label></li>
-        <li>
-          <input class="visually-hidden checkbox" type="checkbox" name="wi-fi">
-          <label>wi-fi</label>
-        </li>
-      </ul>
-      <h3>тип жилья:</h3>
-      <ul>
-        <li>
-          <input class="visually-hidden checkbox" type="checkbox" name="hotel" checked>
-          <label>гостиница</label>
-        </li>
-        <li>
-          <input class="visually-hidden checkbox" type="checkbox" name="motel" checked>
-          <label>мотель</label>
-        </li>
-        <li>
-          <input class="visually-hidden checkbox" type="checkbox" name="apartaments" checked>
-          <label>апартаменты</label>
-        </li>
-      </ul>
-      <h3>стоимость в сутки (Р):</h3>
+        <fieldset lass="selection-infrastructure">
+        <legend>нфраструктура:</legend>
+        <ul class="option-list">
+          <li>
+              <input class="checkbox" type="checkbox" name="pool" id="pool" checked>
+             <label for="pool">бассейн</label>
+          </li>
+          <li>
+              <input class="visually-hidden checkbox" type="checkbox" name="parcing">
+              <label>парковка</label></li>
+          <li>
+            <input class="visually-hidden checkbox" type="checkbox" name="wi-fi">
+             <label>wi-fi</label>
+          </li>
+         </ul>
+        </fieldset>
+        <fieldset>
+        <legend>тип жилья:</legend>
+          <ul class="checkbox">
+          <li>
+            <input class="visually-hidden checkbox" type="checkbox" name="hotel" checked>
+            <label>гостиница</label>
+          </li>
+          <li>
+            <input class="visually-hidden checkbox" type="checkbox" name="motel" checked>
+            <label>мотель</label>
+          </li>
+          <li>
+            <input class="visually-hidden checkbox" type="checkbox" name="apartaments" checked>
+            <label>апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+      <legend>стоимость в сутки (Р):</legend>
         <div>от 0</div>
         <div alt="Ползунок"></div>
         <div>до 3000</div>
       <input type="submit" value="показать">
+      </fieldset>
     </section>
     </div>
+    </form>
     <h2 class="found">найдено:</h2>
       <h4 class="sorting">сортировка:</h4>
         <ul class="sort">

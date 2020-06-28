@@ -231,18 +231,42 @@ img {
 
 /*catalog*/
 
-
-.options ul{
-  background-color: var(--basic-blue); /*Временное решение, для видимости элементов*/
-  list-style: none;
-  line-height: 21px;
+.fs {
   color: var(--basic-white);
+  background-color: var(--basic-black);
+  background-image: url("../img/background2.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
-.checkbox {
+.selection-infrastructure label,
+.selection-type label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selection-infrastructure label::before,
+.selection-type label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/icons/checkbox.svg") no-repeat;
+  border: 2px solid var(--basic-white);
+}
+
+.selection-infrastructure label::after,
+.selection-type label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 12px;
+  height: 12px;
+  background-color: green;
 }
 
 .found {
