@@ -231,42 +231,31 @@ img {
 
 /*catalog*/
 
-.fs {
+.options {
+  background-image: url( "../img/background2.png" );
+  width: 1200px;
+  height: 217px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  display: flex;
+}
+
+.option-list {
   color: var(--basic-white);
-  background-color: var(--basic-black);
-  background-image: url("../img/background2.png");
-  background-position: top center;
-  background-repeat: no-repeat;
+  font-weight: bold
+  font-size: 16px;
+  line-height: 21px;
 }
 
-.selection-infrastructure label,
-.selection-type label {
-  position: relative;
-  display: block;
+.select-infrastructure {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.input-check {
   cursor: pointer;
-  user-select: none;
-}
-
-.selection-infrastructure label::before,
-.selection-type label::before {
-  content: "";
-  position: absolute;
-  left: -42px;
-  top: 0;
-  width: 23px;
-  height: 23px;
-  border: 2px solid var(--basic-white);
-}
-
-.selection-infrastructure label::after,
-.selection-type label::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -38px;
-  width: 12px;
-  height: 12px;
-  background-color: green;
 }
 
 .found {
