@@ -28,13 +28,14 @@
           <legend>Инфраструктура:</legend>
           <ul class="select-infrastructure">
             <li>
-              <label class="input-check" for="pool"><input class="checkbox" type="checkbox" name="pool" id="pool" checked><span></span>бассейн</label>
+              <label class="input-check"><input type="checkbox" name="pool" id="pool" checked><span></span>бассейн</label>
             </li>
             <li>
-              <label><input class="checkbox" type="checkbox" name="parcing">
-              Парковка</label></li>
+              <label class="input-check">
+                <input type="checkbox" name="parking" id="parking">Парковка</label>
+            </li>
             <li>
-              <label><input class="checkbox" type="checkbox" name="wi-fi">
+              <label class="input-check"><input class="checkbox" type="checkbox" name="wi-fi" id="wi-fi">
              wi-fi</label>
             </li>
          </ul>
@@ -43,15 +44,15 @@
           <legend>Тип жилья:</legend>
             <ul class="select-infrastructure">
             <li>
-              <label><input class="checkbox" type="checkbox" name="hotel" checked>
+              <label class="input-check"><input type="checkbox" name="hotel" checked>
               Гостиница</label>
            </li>
             <li>
-              <label><input class="checkbox" type="checkbox" name="motel" checked>
+              <label class="input-check"><input type="checkbox" name="motel" checked>
               Мотель</label>
             </li>
             <li>
-              <label><input class="checkbox" type="checkbox" name="apartaments" checked>
+              <label class="input-check"><input type="checkbox" name="apartaments" checked>
               Апартаменты</label>
           </li>
         </ul>
@@ -66,17 +67,30 @@
         </section>
         </div>
         </form>
-    <h2 class="found">найдено:</h2>
-      <h4 class="sorting">сортировка:</h4>
+    <div class="border">
+    <h2 class="found">Найдено:</h2>
+      <h4 class="sorting">Сортировка:</h4>
         <ul class="sort">
-         <li><a href="">по цене</li>
-         <li><a href="">по типу</li>
-         <li><a href="">по рейтингу</li>
+          <li class="normal"><a href="">по цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По рейтингу</a></li>
         </ul>
-        <div class="up"><span class="visually-hidden">По возрастанию</span></div>
-        <a href="" class="down"><span class="visually-hidden">По убыванию</span></a>
+      <div class="up">
+        <a href="">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 0L0 10H11L5.5 0Z">
+          </svg></a>
+      </div>
+      <div class="down">
+        <a href="">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 10L11 0L0 0L5.5 10Z">
+          </svg>
+        </a>
+      </div>
+      </div>
       <h3 class="visually-hidden">Результаты поиска</h3>
-      <article class="hotel-list">
+        <article class="hotel-list">
           <a><img src="img/amara_resort.png" height="90" width="137" alt="фото гостиницы"></a>
           <a href=""><span class="hotel-name">Amara Resot & SPA</span></a>
             <div class="price">
