@@ -15,6 +15,8 @@
 --special-dark: #333333;
 --special-gray: #666666;
 --grey-up: #CACACA;
+
+--shadow: rgba(0, 1, 1, 0.2);
 }
 
 body {
@@ -27,7 +29,7 @@ body {
   font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--basic-gray);
 }
 
 a {
@@ -39,11 +41,46 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+}
+
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 571px;
+  top: 0px;
+}
+
+.main-navigation {
+  display: inline-flex;
+  width: 1200px;
+  height: 56px;
+}
+
 .site-navigation, a {
   font-weight: bold;
   list-style: none;
   color: var(--basic-black);
+  display: inline-flex;
+  width: 300px;
 }
+
+
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -69,6 +106,9 @@ img {
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  padding: 42.5px 341px 51px 340px;
+
 }
 
 .blue-box {
@@ -119,6 +159,12 @@ img {
 .question {
   list-style: none;
   text-align: center;
+  align-items: center;
+  display: block;
+  width: 435px;
+  height: 155px;
+  padding-left: 383px;
+  padding-right: 382px;
 }
 
 .fat {
@@ -158,6 +204,13 @@ img {
 
 /*Footer*/
 
+.main-footer {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: inline-flex;
+  width: 1200px;
+  height: 120px;
+}
 
 .main-footer ul {
   list-style: none;
@@ -169,6 +222,13 @@ img {
   font-size: 21px;
   font-weight: 26px;
 }
+
+.social {
+  padding: 36px 525px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
 
 .social a:hover,
 .social a:focus {
