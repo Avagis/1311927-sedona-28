@@ -67,6 +67,12 @@ img {
   z-index: 2;
 }
 
+.main-navigation {
+  display: inline-flex;
+  width: 1200px;
+  height: 56px;
+}
+
 .site-navigation {
   list-style: none;
   display: flex;
@@ -131,14 +137,35 @@ img {
   text-align: center;
 }
 
+.background-photo {
+  position: relative;
+  text-align: center;
+  background-image: url("../img/background_photo.jpg");
+  width: 1200px;
+  height: 509px;
+  padding-top: 79px;
+}
+
+.shape {
+  background-image: url("../img/shape.png");
+}
+
+.description {
+  padding: 42.5px 341px 51px 340px;
+}
+
 .sedona {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
-  display: flex;
-  padding: 42.5px 341px 51px 340px;
+}
 
+.causes {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--special-dark);
+  margin: 0
 }
 
 .blue-box {
@@ -180,11 +207,6 @@ img {
   background-color: var(--background-gray);
 }
 
-.causes {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--special-dark);
-}
 
 .question {
   list-style: none;
@@ -242,29 +264,32 @@ img {
   background-color: var(--white-footer);
   font-size: 14px;
   line-height: 26px;
-  margin: 0;
-  padding: 0;
+  margin-top: -126px;
+  z-index: 40;
 }
 
 .main-footer ul {
   list-style: none;
-  background-color: transparent;
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+  grid-template-columns: 400px 400px 400px;
+  min-height: 120px;
+}
+
+.footer-content. 
+.communication {
+  padding-top: 23px;
+  padding-left: 72px;
 }
 
 .communication {
   font-weight: bold;
   font-size: 21px;
   font-weight: 26px;
-  margin: 0;
-  padding-top: 22px;
-  padding-bottom: 36px;
-  padding-left: 72px;
+  text-align: center;
+  margin: 10px;
 }
 
 .mine-social {
@@ -324,13 +349,17 @@ img {
 }
 
 .mine-academy {
-  margin: 0;
-  padding-top: 49px;
-  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  padding-right: 73px;
+  text-decoration: none;
+  margin-top: 2px;
 }
 
 .web {
   margin-right: 8px;
+  margin-top: 11px;
 }
 
 .academy {
@@ -456,8 +485,21 @@ fill: var(--grey-up);
   fill: var(--basic-blue);
 }
 
-.hotel-list{
+.hotel-list {
   border-bottom: 1px solid var(--border-gray);
+}
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: 208px 751px 183px;
+  grid-column-gap: 29px;
+  padding-top: 24px;
+  padding-bottom: 30px;
+}
+
+.hotel_photo {
+  margin-left: 73px;
+  margin-top: 6px;
 }
 
 .hotel-name {
@@ -488,9 +530,13 @@ fill: var(--grey-up);
   background-color: var(--basic-blue);
   color: var(--basic-white);
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   line-height: 21px;
   display: inline-block;
   padding: 3px 17px 3px 16px;
+  margin-right: 6px; 
 }
 
 .detail:hover,
