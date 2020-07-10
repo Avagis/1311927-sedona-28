@@ -67,48 +67,43 @@ img {
   z-index: 2;
 }
 
-.main-navigation {
-  display: inline-flex;
-  width: 1200px;
-  height: 56px;
-}
-
 .site-navigation {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  width: 1200px;
-  margin-top: 0;
-  padding-top: 14px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
-.site-navigation, a {
-  font-weight: bold;
-  list-style: none;
-  color: var(--basic-black);
+.site-navigation li{
+  flex-basis: 264px;
 }
 
-.site-navigaton li {
-  width: 300px;
-}
-
-.site-navigation li:nth-child(1) {
-  padding-left: 73px;
+.site-navigation li:first-child {
   text-align: left;
 }
 
 .site-navigation li:nth-child(2) {
   text-align: left;
+  margin-right: 72px;
 }
 
 .site-navigation li:nth-child(3) {
   text-align: right;
+  margin-left: 72px;
 }
 
-.site-navigation li:nth-child(4) {
-  padding-right: 73px;
+.site-navigation li:last-child {
   text-align: right;
+}
+
+
+.site-navigation, a {
+  font-weight: bold;
+  list-style: none;
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover,
@@ -139,15 +134,21 @@ img {
 
 .background-photo {
   position: relative;
+   z-index: 1;
   text-align: center;
-  background-image: url("../img/background_photo.jpg");
-  width: 1200px;
-  height: 509px;
-  padding-top: 79px;
+  background-color: var(--basic-white);
+  background-image: 
+  url("../img/shape.png"),
+  url("../img/background_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: auto, cover;
+  margin: 0;
 }
 
-.shape {
-  background-image: url("../img/shape.png");
+.welcome {
+  padding-top: 77px;
+  padding-bottom: 75px;
 }
 
 .description {
@@ -168,6 +169,10 @@ img {
   margin: 0
 }
 
+.container {
+  display: flex;
+}
+
 .blue-box {
   background: var(--basic-blue);
   color: var(--basic-white);
@@ -180,10 +185,26 @@ img {
   height: 256px;
 }
 
+.real-city {
+  padding: 47px 51px 54px 52px;
+  align-items: center;
+  text-align: center;
+}
+
+.enter {
+  display: block;
+}
+
 .white {
   font-weight: normal;
   font-size: 14px;
   color: var(--basic-white);
+}
+
+.devil_bridge {
+  align-items: center;
+  text-align: center;
+  padding: 50px 49px 51px 50px;
 }
 
 .list {
@@ -201,10 +222,36 @@ img {
   color: var(--special-dark);
 }
 
+.house {
+  text-align: center;
+  padding-left: 73px;
+}
+
+.food {
+  text-align: center;
+  padding-left: 98px;
+  padding-right: 118px;
+}
+
+.souvenirs {
+  text-align: center;
+  padding-right: 65px;
+}
 
 .advantages {
+  display: flex;
   list-style: none;
+  align-items: center;
+  text-align: center;
   background-color: var(--background-gray);
+  padding: 48px 70px 54px;
+  margin: 0;
+}
+
+.gray {
+  display: block;
+  padding-left: 148px;
+  padding-right: 168px;
 }
 
 
