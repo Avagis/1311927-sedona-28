@@ -21,7 +21,7 @@
 }
 
 body {
-  min-width: 960px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -61,10 +61,11 @@ img {
 
 .main-header-logo {
   position: absolute;
-  top: 0;
-  margin-left: 50%;
-  left: -69px;
   z-index: 2;
+  width: 138px;
+  height: 70px;
+  left: 50%;
+  margin-left: -70px;
 }
 
 .site-navigation {
@@ -180,7 +181,7 @@ img {
   text-align: center;
   font-size: 21px;
   line-height: 21px;
-  display: block;
+  display: flex;
   width: 400px;
   height: 256px;
 }
@@ -240,11 +241,11 @@ img {
 
 .advantages {
   display: flex;
+  flex-grow: 1;
   list-style: none;
   align-items: center;
   text-align: center;
   background-color: var(--background-gray);
-  padding: 48px 70px 54px;
   margin: 0;
 }
 
